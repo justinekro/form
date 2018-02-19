@@ -17,7 +17,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	margin: 0px;
-	background: url(background.jpg);
+	background: asset-data-url('background.jpg');
 	background-size: cover;
 
 }
