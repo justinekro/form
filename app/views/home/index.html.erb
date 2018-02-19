@@ -1,11 +1,19 @@
+<div class="container">
 <% if user_signed_in? %>
 
-<%= link_to "Sign out", destroy_user_session_path, method: :delete  %>
+<h1> You are logged in, my dear </h1>
+
+<p> <%= link_to "Sign out", destroy_user_session_path, method: :delete  %> </p>
 
 <% else %>
+
+<h1> Welcome, dear you. </h1>
+<h2> Dare to join this amazing journey? </h2>
+
 
 <p> <%= link_to "Log in", new_user_session_path %> </p>
 <p> <%= link_to "Sign up!", new_user_registration_path %> </p>
 
 
 <% end %>
+</div>

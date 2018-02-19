@@ -1,26 +1,56 @@
-<h2>Log in</h2>
+<div class="general">
+<div class="signup">
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+<div class="left-column">
+  <div class="content">
+    <h1>Justikro form</h1>
+    <h2>Inscription made cool</h2>
+      <div class="line"> </div>
+      <div class="value">
+        <p> <%= image_tag 'flower.png' %> </p>
+        <p>Un form de toute beauté </p>
+      </div>
+
+      <div class="value">
+        <p> <%= image_tag 'strong.png' %> </p>
+        <p> Un form efficace </p>
+      </div>
+
+      <div class="value">
+        <p> <%= image_tag 'magic.png' %> </p>
+        <p> Un form form-idable </p>
+      </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+<div class="right-column">
+  <div class="form">
+    <p> Time to log in! </p>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field">
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"Your email", class: "field1" %>
+      </div>
 
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end -%>
+      <div class="field">
+        <%= f.password_field :password, autocomplete: "off", placeholder:"Your password",class: "field3" %>
+      </div>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
+      <% if devise_mapping.rememberable? -%>
+        <div class="field5">
+          <%= f.check_box :remember_me%>
+          <%= f.label "Remember me?"%>
+        </div>
+      <% end -%>
 
-<%= render "devise/shared/links" %>
+      <div class="actions">
+        <%= f.submit "Log in" %>
+      </div>
+    <% end %>
+
+</div>
+
+<%= link_to "Did not sign up yet?", new_user_registration_path, class: "login" %>
+
+
+</div>
+</div>

@@ -1,3 +1,4 @@
+<div class="general">
 <div class="signup">
 
 <div class="left-column">
@@ -5,9 +6,20 @@
     <h1>Justikro form</h1>
     <h2>Inscription made cool</h2>
       <div class="line"> </div>
-    <p> <%= image_tag 'flower.png' %> Un form de toute beauté </p>
-    <p> <%= image_tag 'strong.png' %> Un form efficace </p>
-    <p> <%= image_tag 'magic.png' %>Un form form-idable </p>
+      <div class="value">
+        <p> <%= image_tag 'flower.png' %> </p>
+        <p>Un form de toute beauté </p>
+      </div>
+
+      <div class="value">
+        <p> <%= image_tag 'strong.png' %> </p>
+        <p> Un form efficace </p>
+      </div>
+
+      <div class="value">
+        <p> <%= image_tag 'magic.png' %> </p>
+        <p> Un form form-idable </p>
+      </div>
   </div>
 </div>
 
@@ -20,29 +32,27 @@
       <%= devise_error_messages! %>
 
       <div class="field">
-        <%= f.email_field :email, autofocus: true, autocomplete: "email",placeholder:"Your email" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email",placeholder:"Your email", class: "field1" %>
       </div>
 
       <div class="field">
-        <%= f.password_field :password, autocomplete: "off", placeholder:"Your password" %>
+        <%= f.password_field :password, autocomplete: "off", placeholder:"Your password", class: "field2" %>
       </div>
 
       <div class="field">
-        <%= f.password_field :password_confirmation, autocomplete: "off", placeholder:"Confirm your password" %>
+        <%= f.password_field :password_confirmation, autocomplete: "off", placeholder:"Confirm your password", class: "field3" %>
       </div>
 
       <div class="actions">
-        <%= f.submit "Sign up" %>
+        <%= f.submit "Sign up", class: "field4" %>
       </div>
       
-      <p class="password"> <%= link_to('Forgot your password?', edit_user_password_path) %> </p> 
-
-
+      <%= link_to 'Forgot your password?', edit_user_password_path, class: "password" %> 
     <% end %>
   </div>
 
   <%= link_to "Log in", new_user_session_path, class: "login" %>
 
 </div>
-</div>>
+</div>
 
