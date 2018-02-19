@@ -27,6 +27,8 @@
   <div class="form">
     <p> Time to log in! </p>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+    
       <div class="field">
         <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"Your email", class: "field1" %>
       </div>
@@ -43,9 +45,11 @@
       <% end -%>
 
       <div class="actions">
-        <%= f.submit "Log in" %>
+        <%= f.submit "Log in",class: "field4" %>
       </div>
     <% end %>
+
+    <%= link_to 'Forgot your password?', new_user_password_path, class: "password" %> 
 
 </div>
 

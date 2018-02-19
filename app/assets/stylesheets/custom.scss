@@ -26,11 +26,6 @@ body {
 
 }
 
-.value {
-	display: flex;
-	align-items: center;
-	padding-top: 0px;
-}
 
 .signup
 {
@@ -52,7 +47,7 @@ h2 {
 	font-weight:lighter;
 }
 
-/* Columns */
+/* Left Column */
 
 .left-column {
 	border-radius: 6px 0 0 6px;
@@ -67,13 +62,10 @@ h2 {
 	justify-content:center;
 }
 
-.right-column {
-	background-color: rgba(255,255,255,0.9);
-    width: 45%;
-    padding: 10px 0 0 0;
-    flex-direction: row;
-    margin: 0px;
-  	border-radius: 0 6px 6px 0;
+.value {
+	display: flex;
+	align-items: center;
+	padding-top: 0px;
 }
 
 .content p img {
@@ -82,15 +74,24 @@ h2 {
 	opacity: 1;
 }
 
-/* Form */
+/* Right Column */
 
-
-.right-column p {
+.right-column {
+	background-color: rgba(255,255,255,0.9);
+    width: 45%;
+    padding: 10px 0 0 0;
+    flex-direction: row;
+    margin: 0px;
+  	border-radius: 0 6px 6px 0;
+  	p {
 	text-align: left;
 	margin-left: 10%;
 	text-decoration: none;
-
+	}
 }
+
+
+/* Form */
 
 .form {
 	height: 80%;
@@ -127,8 +128,6 @@ input[type=submit] {
 	background-position: 5px;
 	background-size: 22px;
 	padding-left: 40px;
-
-
 }
 
 .field2 {
@@ -138,9 +137,9 @@ input[type=submit] {
 	background-position: 5px;
 	background-size: 22px;
 	padding-left: 40px;
-
-	
+	border-top-width: 0;	
 }
+
 .field3 {
 	border-radius: 0 0 5px 5px;
 	border: 1px solid #D5D6D7;
@@ -148,6 +147,7 @@ input[type=submit] {
 	background-position: 5px;
 	background-size: 22px;
 	padding-left: 40px;
+	border-top-width: 0;
 }
 
 .field4 {
@@ -158,14 +158,32 @@ input[type=submit] {
 	float:left;
 	display:flex; 
 	margin-left: 10%;
-
 }
 
-input[type=checkbox] {
-  transform: scale(0.5);
-
+.password {
+	text-align: left;
+	text-decoration: none;
+	margin-left: 10%;
+	margin-top: 5%;
+	font-style: italic;
+	color: #AEAEAF;
 }
 
+#error_explanation {
+	width:100%;
+	color: red;
+	font-size:15px;
+	h2 {
+	font-weight:lighter;
+	color: red;
+	font-size:15px;}
+	li {
+	font-weight:lighter;
+	list-style-type: none; 
+	}
+}
+
+/* Login box */
 
 .login {
 	background-color: rgba(174,174,175,0.6);
@@ -178,7 +196,6 @@ input[type=checkbox] {
 	font-weight:normal;
 	text-decoration: none;
 	border-radius: 0 0 6px 0;
-
 }
 
 /* Ligne horizontale */
@@ -192,16 +209,26 @@ input[type=checkbox] {
 
 }
 
-.password {
-	text-decoration:none; 
-	float: left;
-	margin-left: 10%;
-	margin-top: 5%;
-	font-style: italic;
-	color: #AEAEAF;
-}
+
+/* Body without forms */
 
 .container {
 	text-align: center;
 }
+
+.button { 
+	background: #FFA09E;
+	border-radius:5px;
+	padding:10px;
+	text-decoration: none;
+	color:white;
+
+}
+
+.button2 {
+	text-decoration: none;
+	color:gray;
+	font-style: italic;
+}
+
 
