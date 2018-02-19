@@ -1,0 +1,149 @@
+/* Global */
+
+html {
+    height: 100%;
+}
+
+* {
+  padding: 0px;
+}
+
+body {
+    height: 100%;
+	font-family: sans-serif;
+	font-size: 15px;
+	font-weight:lighter;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0px;
+	background: url(background.jpg);
+	background-size: cover;
+
+}
+
+.signup
+{
+	opacity: 0.95;
+	width:60%;
+	height:70%;
+	display: flex;
+
+}
+
+h1 {
+	font-size: 50px;
+	padding-bottom: 5px;
+}
+
+h2 {
+	font-size: 30px;
+
+	font-weight:lighter;
+}
+
+/* Columns */
+
+.left-column {
+	border-radius: 6px 0 0 6px;
+	background-color: #489AF7 ;
+    width: 55%;
+    color: white;
+    padding: 30px;
+    text-align: left;
+	line-height: 10px ;
+
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+}
+
+.right-column {
+	background-color: white ;
+    width: 45%;
+    padding: 10px;
+    flex-direction: row;
+    margin: 0px;
+  	padding: 0px;
+  	border-radius: 0 6px 6px 0;
+}
+
+.content p img {
+	height: 30px;
+	padding-right: 5px;
+}
+
+/* Form */
+
+
+.right-column p {
+	text-align: left;
+	margin-left: 10%;
+	text-decoration: none;
+
+}
+
+.form {
+	height: 80%;
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	text-align: center;
+}
+
+
+input {
+	width: 80%;
+	height: 30px;
+	font-size: 15px;
+	margin: -1px;
+	padding-left: 5px;
+	font-weight:lighter;
+}
+
+input[type=text] {
+	color: white;
+    background-color: #489AF7;
+    margin-top:20px;
+    border-radius: 4px;
+    border-width: 0px;
+    border-shadow: 5px #888888;
+}
+
+input[type=submit] {
+	color: white;
+    background-color: #489AF7;
+    margin-top:20px;
+    border-radius: 4px;
+    border-width: 0px;
+    border-shadow: 5px #888888;
+    font-weight:normal;
+}
+
+
+.login {
+	background-color: #AEAEAF;
+	height: 20%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+	text-decoration: none;
+	border-radius: 0 0 6px 0;
+
+}
+
+/* Ligne horizontale */
+
+.line {
+	width: 100px; 
+	height: 2px; 
+	background: #2FCBAC;
+	margin-top: 10%;
+	margin-bottom: 10%;
+
+}
+
+
+

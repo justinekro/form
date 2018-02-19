@@ -1,0 +1,48 @@
+<div class="signup">
+
+<div class="left-column">
+  <div class="content">
+    <h1>Justikro form</h1>
+    <h2>Inscription made cool</h2>
+      <div class="line"> </div>
+    <p> <%= image_tag 'flower.png' %> Un form de toute beauté </p>
+    <p> <%= image_tag 'strong.png' %> Un form efficace </p>
+    <p> <%= image_tag 'magic.png' %>Un form form-idable </p>
+  </div>
+</div>
+
+<div class="right-column">
+
+  <div class="form">
+    <p> Time to create your profile </p>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="field">
+        <%= f.email_field :email, autofocus: true, autocomplete: "email",placeholder:"Your email" %>
+      </div>
+
+      <div class="field">
+        <%= f.password_field :password, autocomplete: "off", placeholder:"Your password" %>
+      </div>
+
+      <div class="field">
+        <%= f.password_field :password_confirmation, autocomplete: "off", placeholder:"Confirm your password" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Sign up" %>
+      </div>
+      
+      <p class="password"> <%= link_to('Forgot your password?', edit_user_password_path) %> </p> 
+
+
+    <% end %>
+  </div>
+
+  <%= link_to "Log in", new_user_session_path, class: "login" %>
+
+</div>
+</div>>
+
